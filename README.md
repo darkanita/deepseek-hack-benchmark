@@ -15,10 +15,10 @@ Welcome to the official repository for **Compete Hack Hours – AI/ML Edition | 
 ## 🧪 Model Groups Compared
 This project compares two distinct groups of models, each optimized for different capabilities:
 
-- **Group 1 – Azure AI Foundry Deployed Models**: `DeepSeek-R1`, `o3-mini`, `o1-mini`
+- **Group 1**: `DeepSeek-R1`, `o3-mini`, `o1-mini`
   - These models are fine-tuned for **logical reasoning, instruction following**, and general **code generation tasks**.
 
-- **Group 2 – GitHub-Hosted or External Models**: `gpt-4o`, `DeepSeek-V3`
+- **Group 2**: `gpt-4o`, `DeepSeek-V3`
   - These models are more recent and designed for **advanced reasoning**, **multimodal** use cases, and **enhanced generalization**.
 
 ---
