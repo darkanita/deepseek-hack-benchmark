@@ -29,9 +29,13 @@ This repository includes full support for **GitHub Codespaces** using a preconfi
 
 ### 🚀 Quick Start in Codespaces
 1. Click the green **"Code"** button on this repository.
-2. Select **"Codespaces > Create codespace on main"**.
-3. Wait for setup (devcontainer will install everything automatically).
-4. Explore either of the following notebooks:
+2. Select **"Codespaces > ... > + New with options"**.
+3. We will use a devcointainer in **"Dev container configutation > DeepSeek Hack Benchmark"***
+4. Click the green **"Create codespace"**
+5. Wait for setup (devcontainer will install everything automatically).
+6. Rename `.env.template` to `.env`
+7. Configure the variables with your information, to know more about [Github Models](https://techcommunity.microsoft.com/blog/educatordeveloperblog/github-model-catalog---getting-started/4212711), to know more about [Azure AI Foundry Models](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/deploy-models-openai)
+8. Explore either of the following notebooks:
    - `azure_foundry_benchmark.ipynb`
    - `github_model_benchmark.ipynb`
 
@@ -56,7 +60,7 @@ OPENAI_API_KEY=<your-openai-api-key>
 GITHUB_TOKEN=<your-github-token>
 ```
 
-### 📅 Install Dependencies
+### 📅 Install Dependencies -- ONLY IF YOU ARE RUNNING LOCALLY
 ```bash
 pip install -r requirements.txt
 ```
@@ -83,17 +87,10 @@ Each notebook will:
 - Generate CSV & charts
 
 You can execute these notebooks in **three ways**:
-- 🖥️ Locally with Python & Jupyter installed
+- 🖥️ Locally with **VSCode**
 - ☁️ Inside a **GitHub Codespace** (recommended for simplicity)
 - 🌐 Using the **Azure AI Foundry Environment** (within the Azure AI Studio)
 
-Run locally or in Codespaces with:
-
-```bash
-jupyter notebook azure_foundry_benchmark.ipynb
-# or
-jupyter notebook github_model_benchmark.ipynb
-```
 
 ### 🤖 Tasks Benchmarked
 - ✅ Prime number checker
