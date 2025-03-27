@@ -4,11 +4,22 @@ Welcome to the official repository for **Compete Hack Hours – AI/ML Edition | 
 
 ## 🚀 Project Overview
 
-- Compare models like `DeepSeek-R1`, `o3-mini`, and `o1-mini`.
+- Compare models such as `DeepSeek-R1`, `o3-mini`, `o1-mini`, `gpt-4o`, and `DeepSeek-V3`, with the option to use either **Azure AI Foundry** or **GitHub-hosted models** depending on your setup.
 - Evaluate tasks such as logical reasoning, math, and Python coding.
-- Use Azure AI Foundry and GitHub-hosted endpoints.
 - Visualize pass rates, latency, and token usage.
 - Designed for developers of all skill levels with a user-friendly Jupyter Notebook.
+- Run locally, in GitHub Codespaces, or directly using either Azure AI Foundry or GitHub models.
+
+---
+
+## 🧪 Model Groups Compared
+This project compares two distinct groups of models, each optimized for different capabilities:
+
+- **Group 1 – Azure AI Foundry Deployed Models**: `DeepSeek-R1`, `o3-mini`, `o1-mini`
+  - These models are fine-tuned for **logical reasoning, instruction following**, and general **code generation tasks**.
+
+- **Group 2 – GitHub-Hosted or External Models**: `gpt-4o`, `DeepSeek-V3`
+  - These models are more recent and designed for **advanced reasoning**, **multimodal** use cases, and **enhanced generalization**.
 
 ---
 
@@ -54,13 +65,24 @@ Or run in Jupyter Notebook:
 ## 💻 How to Use
 
 ### 🔬 Benchmark via Notebook
-Run the included Jupyter Notebook to:
-- Authenticate to Azure
-- Run prompts across models
+You can run one of the following notebooks depending on the platform you want to use:
+
+- `azure_foundry_benchmark.ipynb` → for models deployed on **Azure AI Foundry**
+- `github_model_benchmark.ipynb` → for models accessed via **GitHub** endpoints
+
+Each notebook will:
+- Authenticate to the appropriate backend
+- Run prompts across selected models
 - Auto-evaluate results
 - Generate CSV & charts
 
-```bash
+You can execute these notebooks in **three ways**:
+- 🖥️ Locally with Python & Jupyter installed
+- ☁️ Inside a **GitHub Codespace** (recommended for simplicity)
+- 🌐 Using the **Azure AI Foundry Environment** (within the Azure AI Studio)
+
+Run locally or in Codespaces with:
+
 jupyter notebook azure_model_benchmark.ipynb
 ```
 
