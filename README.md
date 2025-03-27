@@ -15,19 +15,25 @@ Welcome to the official repository for **Compete Hack Hours – AI/ML Edition | 
 ## 🧪 Model Groups Compared
 This project compares two distinct groups of models, each optimized for different capabilities:
 
-- **Group 1**: `DeepSeek-R1`, `o3-mini`, `o1-mini`
+- **Group 1 – Azure AI Foundry Deployed Models**: `DeepSeek-R1`, `o3-mini`, `o1-mini`
   - These models are fine-tuned for **logical reasoning, instruction following**, and general **code generation tasks**.
 
-- **Group 2**: `gpt-4o`, `DeepSeek-V3`
+- **Group 2 – GitHub-Hosted or External Models**: `gpt-4o`, `DeepSeek-V3`
   - These models are more recent and designed for **advanced reasoning**, **multimodal** use cases, and **enhanced generalization**.
 
 ---
 
 ## 📆 Use in GitHub Codespaces
 
-1. Click the green **"Code"** button and select **"Codespaces > Create codespace on main"**.
-2. Wait for setup to complete.
-3. Open `azure_model_benchmark.ipynb` and start exploring!
+This repository includes full support for **GitHub Codespaces** using a preconfigured `devcontainer`.
+
+### 🚀 Quick Start in Codespaces
+1. Click the green **"Code"** button on this repository.
+2. Select **"Codespaces > Create codespace on main"**.
+3. Wait for setup (devcontainer will install everything automatically).
+4. Explore either of the following notebooks:
+   - `azure_foundry_benchmark.ipynb`
+   - `github_model_benchmark.ipynb`
 
 You'll be working in a fully pre-configured environment — no local setup needed!
 
@@ -83,7 +89,10 @@ You can execute these notebooks in **three ways**:
 
 Run locally or in Codespaces with:
 
-jupyter notebook azure_model_benchmark.ipynb
+```bash
+jupyter notebook azure_foundry_benchmark.ipynb
+# or
+jupyter notebook github_model_benchmark.ipynb
 ```
 
 ### 🤖 Tasks Benchmarked
